@@ -9,15 +9,77 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center">Lista de Tarefas</h1>
+        
         <form class="mb-3">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Adicionar nova tarefa">
+                Data Inicial <input type="date" name="dataInicial" value="2024-09-29">
+                Data Final <input type="date" name="dataFinal" value="2024-09-29">
             </div>
             <button type="submit" class="btn btn-primary">Adicionar</button>
         </form>
         <ul class="list-group">
-            <li class="list-group-item">Tarefa 1 <button class="btn btn-danger btn-sm float-right">Remover</button></li>
-            <li class="list-group-item">Tarefa 2 <button class="btn btn-danger btn-sm float-right">Remover</button></li>
+            <div class="table-responsive">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tarefa</th>
+                            <th scope="col">Data Inicial</th>
+                            <th scope="col">Data Final</th>
+                            <th scope="col">Concluída</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td scope="row">Tarefa 1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                            <td><input type="checkbox" class="btn-check" id="btncheck1"/></td>
+                            <td><button class="btn btn-danger btn-sm float-right">Remover</button></td>
+                        </tr>
+                        <tr class="">
+                            <td scope="row">Tarefa 1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                            <td><input type="checkbox" class="btn-check" id="btncheck1"/></td>
+                            <td><button class="btn btn-danger btn-sm float-right">Remover</button></td>
+                        </tr>
+                        
+                        <tr class="">
+                            <td scope="row">Tarefa 1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                            <td><input type="checkbox" class="btn-check" id="btncheck1"/></td>
+                            <td><button class="btn btn-danger btn-sm float-right">Remover</button></td>
+                        </tr>
+                        
+                        <tr class="">
+                            <td scope="row">Tarefa 1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                            <td><input type="checkbox" class="btn-check" id="btncheck1"/></td>
+                            <td><button class="btn btn-danger btn-sm float-right">Remover</button></td>
+                        </tr>
+                        
+                        <tr class="">
+                            <td scope="row">Tarefa 1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                            <td><input type="checkbox" class="btn-check" id="btncheck1"/></td>
+                            <td><button class="btn btn-danger btn-sm float-right">Remover</button></td>
+                        </tr>
+                        
+                        <tr class="">
+                            <td scope="row">Tarefa 1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                            <td><input type="checkbox" class="btn-check" id="btncheck1"/></td>
+                            <td><button class="btn btn-danger btn-sm float-right">Remover</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
