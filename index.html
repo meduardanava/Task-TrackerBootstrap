@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Task & Tracker - Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container mt-5">
         <h1 class="text-center">Lista de Tarefas</h1>
-        
         <form class="mb-3">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Adicionar nova tarefa">
-                Data Inicial <input type="date" name="dataInicial" value="2024-09-29">
-                Data Final <input type="date" name="dataFinal" value="2024-09-29">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label for="dataInicial">Tarefa</label>
+                            <input type="text" class="form-control" placeholder="Uma breve descrição da tarefa">
+                        </div>    
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="dataInicial">Data Inicial</label>
+                            <input type="date" class="form-control" id="dataInicial">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="dataFinal">Data Final</label>
+                            <input type="date" class="form-control" id="dataFinal">
+                        </div>
+                    </div>
+                </div>
             </div>
             <button type="submit" class="btn btn-primary">Adicionar</button>
         </form>
@@ -82,8 +99,10 @@
             </div>
         </ul>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </body>
 </html>
